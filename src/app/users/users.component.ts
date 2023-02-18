@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.css']
 })
-export class UsersComponent {
+export class UsersComponent implements OnInit{
   users = [
     {
       id: 1,
@@ -20,4 +20,10 @@ export class UsersComponent {
       name: 'Chris'
     }
   ];
+
+  constructor() {}
+
+  ngOnInit(): void {
+    
+  }
 }
