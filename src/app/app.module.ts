@@ -17,6 +17,7 @@ const appRoutes: Routes = [
   { path: 'users', component: UsersComponent }, // This will load the following path: localhost:4200/users
   { path: 'users/:id/:name', component: UserComponent }, 
   { path: 'servers', component: ServersComponent },
+  { path: 'servers/:id', component: ServerComponent },
   { path: 'servers/:id/edit', component: EditServerComponent },
 ];
 
